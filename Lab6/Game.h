@@ -7,7 +7,6 @@
 // Known bugs:
 
 #include "Flow_Field_Pathfinding .h"
-#include "Tile.h"
 
 #include "SFML/Graphics.hpp"
 
@@ -35,7 +34,6 @@ private:
 	bool is_running;
 
 	FlowField * m_flowField;
-	Tile * m_tile;
 };
 
 #endif // !GAME_H

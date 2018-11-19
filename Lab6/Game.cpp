@@ -15,8 +15,7 @@ Game::Game() :
 {
 	m_flowField = new FlowField();
 
-	m_tile = new Tile(sf::Color::Blue, sf::Color::White, sf::Vector2f(0, 0),
-		1.2f, 100.0f, 100.0f);
+	
 }
 
 //
@@ -53,7 +52,6 @@ void Game::run()
 void Game::update(sf::Time deltaTime)
 {
 	m_flowField->update(deltaTime);
-	m_tile->update(deltaTime);
 
 	//
 	if (!is_running)
@@ -89,7 +87,6 @@ void Game::render()
 	m_window.clear(sf::Color(0, 0, 0));
 	
 	//
-	m_tile->render(m_window);
 
 	//
 	m_window.display();
