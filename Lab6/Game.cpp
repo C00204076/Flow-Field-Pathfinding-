@@ -13,9 +13,8 @@ Game::Game() :
 	m_window{ sf::VideoMode{2500, 2000, 32}, "Lab 6" },
 	is_running{ true }
 {
-	m_flowField = new FlowField();
-
-	
+	//m_flowField = new FlowField();
+	m_tileMap->initialise();
 }
 
 //
@@ -51,7 +50,8 @@ void Game::run()
 //
 void Game::update(sf::Time deltaTime)
 {
-	m_flowField->update(deltaTime);
+	//m_flowField->update(deltaTime);
+	m_tileMap->update(deltaTime);
 
 	//
 	if (!is_running)
@@ -87,6 +87,9 @@ void Game::render()
 	m_window.clear(sf::Color(0, 0, 0));
 	
 	//
+	//m_flowField->render(m_window);
+	//
+	m_tileMap->render(m_window);
 
 	//
 	m_window.display();

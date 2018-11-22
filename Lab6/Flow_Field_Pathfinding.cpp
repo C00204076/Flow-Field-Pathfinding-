@@ -11,8 +11,8 @@
 //
 FlowField::FlowField()
 {
-
-
+	
+	
 }
 
 //
@@ -24,27 +24,14 @@ FlowField::~FlowField()
 //
 void FlowField::update(sf::Time deltaTime)
 {
-	for (int i = 0; i < gridSizeX; i++)
-	{
-		for (int j = 0; i < gridSizeY; j++)
-		{
-			
-		}
 
-
-	}
 }
 
 //
 void FlowField::render(sf::RenderWindow& window)
 {
-	for (int i = 0; i < gridSizeX; i++)
-	{
-		for (int j = 0; i < gridSizeY; j++)
-		{
-			
-		}
-	}
+
+	
 }
 
 /*
@@ -53,19 +40,19 @@ Tile* TileMap::getTile(int x, int y)
 Tile *t = NULL;
 for(int i = 0; i < tilemap.size(); i++)
 {
-for(int j = 0; j < tilemap[i].size(); j++)
-{
-if(x > tilemap[i][j].sprite.getPosition().x
-&& x < (tilemap[i][j].sprite.getPosition().x+32))
-{
-if(y > tilemap[i][j].sprite.getPosition().y
-&& y < (tilemap[i][j].sprite.getPosition().y+32))
-{
-t = &tilemap[i][j];
-break;
-}
-}
-}
+	for(int j = 0; j < tilemap[i].size(); j++)
+	{
+		if(x > tilemap[i][j].sprite.getPosition().x
+		&& x < (tilemap[i][j].sprite.getPosition().x+32))
+		{
+			if(y > tilemap[i][j].sprite.getPosition().y
+			&& y < (tilemap[i][j].sprite.getPosition().y+32))
+			{
+				t = &tilemap[i][j];
+				break;
+			}
+		}
+	}
 }
 
 return t;
@@ -170,3 +157,4 @@ for (int row = 0; row < rowAmount; row++)
 }
 
 */
+

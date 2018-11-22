@@ -7,6 +7,7 @@
 // Known bugs:
 
 #include "Flow_Field_Pathfinding .h"
+#include "TileMap.h"
 
 #include "SFML/Graphics.hpp"
 
@@ -29,11 +30,14 @@ private:
 	void update(sf::Time deltaTime);
 	void render();
 
+	sf::Texture m_gridTexture;
+
 	sf::RenderWindow m_window;
 
 	bool is_running;
 
 	FlowField * m_flowField;
+	TileMap * m_tileMap;
 };
 
 #endif // !GAME_H

@@ -8,6 +8,8 @@
 
 #include "SFML/Graphics.hpp"
 
+#include "Tile.h"
+
 #include <vector>
 #include <iostream>
 
@@ -26,7 +28,7 @@ private:
 
 
 	//
-	const int gridSizeX = 50, gridSizeY = 50;
+	const int gridSizeX = 50, gridSizeY = 50; // X is row and Y is column
 	const float tileScale = 0.25;
 	const int blockedCost = 999;
 
@@ -43,6 +45,4 @@ private:
 	bool goalChanged = true;
 	bool startChanged = true;
 
-	//
-	
 };

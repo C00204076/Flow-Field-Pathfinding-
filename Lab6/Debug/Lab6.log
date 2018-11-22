@@ -1,2 +1,4 @@
-﻿  Tile.cpp
+﻿  TileMap.cpp
+c:\users\gameuser\desktop\lab6\lab6\tilemap.cpp(30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\gameuser\desktop\lab6\lab6\tilemap.cpp(55): warning C4018: '<': signed/unsigned mismatch
   Lab6.vcxproj -> C:\Users\gameuser\Desktop\Lab6\Debug\Lab6.exe
